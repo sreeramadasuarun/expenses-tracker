@@ -54,14 +54,26 @@
           <form id="form">
             <div class="form-control">
               <label for="text">Transaction</label>
-              <input type="text" id="text" placeholder="Enter transaction..." />
+              <input
+                type="text"
+                id="text"
+                placeholder="Enter transaction..."
+                required
+              />
             </div>
             <div class="form-control">
               <label for="amount"
-                >Amount <br />
-                <small>(+ is income, - is expense)</small></label
+                >Amount <br /><small
+                  >(income ex:10, expenses ex:-10)</small
+                ></label
               >
-              <input type="number" id="amount" placeholder="Enter amount..." />
+              <input
+                type="text"
+                pattern="^[-,0-9]*$"
+                id="amount"
+                placeholder="Enter amount..."
+                required
+              />
             </div>
             <button class="btn">Add transaction</button>
           </form>

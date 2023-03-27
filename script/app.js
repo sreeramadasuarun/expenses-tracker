@@ -26,21 +26,17 @@ function updateLocaleStorage() {
 formEl.addEventListener("submit", function (e) {
   e.preventDefault();
 
-  if (descriptionEl.value.trim() === "" || moneyEl.value.trim() === "") {
-    alert("please fill the blanks");
-  } else {
-    const transaction = {
-      id: generaterandomID(),
-      descriptionEl: descriptionEl.value,
-      moneyEl: +moneyEl.value,
-    };
-    transactions.push(transaction);
-    transactionList(transaction);
-    updateBalanceAmount();
-    updateLocaleStorage();
-    descriptionEl.value = "";
-    moneyEl.value = "";
-  }
+  const transaction = {
+    id: generaterandomID(),
+    descriptionEl: descriptionEl.value,
+    moneyEl: +moneyEl.value,
+  };
+  transactions.push(transaction);
+  transactionList(transaction);
+  updateBalanceAmount();
+  updateLocaleStorage();
+  descriptionEl.value = "";
+  moneyEl.value = "";
 });
 
 //trans-List display//
