@@ -5,6 +5,7 @@
 
   --clr-chocolate: #b08968;
   --clr-white: #edf2fb;
+  --clr-pure-white: #ffffff;
   --clr-cream: #f2e3ac;
   --clr-red: #d80032;
   --clr-grape: rgb(147, 27, 246);
@@ -74,6 +75,11 @@ body {
   align-items: center;
   justify-items: center;
   color: var(--clr-font-color);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../assets/images/24425162_sl_120420_38590_03-[Converted].jpg);
+  /* backdrop-filter: blur(2px); */
 }
 
 .container {
@@ -90,7 +96,7 @@ body {
   justify-content: center;
   padding: 1rem 3rem;
   gap: 1rem;
-  background-color: var(--clr-periwinkle);
+  background-color: var(--clr-pure-white);
   box-shadow: var(--shadow-dark);
 }
 
@@ -108,7 +114,7 @@ body {
 }
 
 .expense {
-  background-color: var(--clr--gold);
+  background-color: var(--clr-cream);
   padding: 11px 20px;
   display: flex;
   justify-content: space-between;
